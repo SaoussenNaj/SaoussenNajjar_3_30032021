@@ -1,0 +1,108 @@
+.localisation {
+  background-color: #e2e0e0;
+  margin: 0;
+  &__recherche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e0e0;
+    height: 50px;
+  }
+}
+form {
+  display: flex;
+  justify-content: center;
+
+  & i {
+    margin-right: 10px;
+  }
+}
+input {
+  border: 1px solid transparent;
+  background-color: #e2e0e0;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 1;
+}
+.reservation {
+  background-color: #f2f2f2;
+  height: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 25px;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+.fonctionnement {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__paragraphe {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__bloc {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    border-radius: 15px;
+  }
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9356dc;
+    border-radius: 100px;
+    color: white;
+    position: relative;
+    left: 8px;
+    height: 25px;
+    width: 33px;
+  }
+  &__function {
+    background-color: $background-color;
+    height: 30px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 2px 5px 5px 2px rgb(0 0 0 / 10%);
+  }
+}
+.icon-style {
+  margin-right: 20px;
+  color: grey;
+}
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-color;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  h2 {
+    padding-top: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

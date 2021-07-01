@@ -1,0 +1,149 @@
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  height: auto;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+header img {
+  align-items: center;
+}
+
+body {
+  width: 399px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  font-size: 18px;
+  opacity: 1;
+  background: #ff79da;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.localisation {
+  background-color: #e2e0e0;
+  margin: 0;
+}
+.localisation__recherche {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e2e0e0;
+  height: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+form i {
+  margin-right: 10px;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #e2e0e0;
+}
+
+input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.reservation {
+  background-color: #f2f2f2;
+  height: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.reservation h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 25px;
+}
+.reservation p {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.fonctionnement {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.fonctionnement__paragraphe {
+  font-size: 18px;
+  font-weight: bold;
+}
+.fonctionnement__bloc {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  border-radius: 15px;
+}
+.fonctionnement__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356dc;
+  border-radius: 100px;
+  color: white;
+  position: relative;
+  left: 8px;
+  height: 25px;
+  width: 33px;
+}
+.fonctionnement__function {
+  background-color: whitesmoke;
+  height: 30px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.icon-style {
+  margin-right: 20px;
+  color: grey;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.restaurant h2 {
+  padding-top: 20px;
+}
+.restaurant__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */
