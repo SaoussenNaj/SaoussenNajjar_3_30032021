@@ -1,6 +1,8 @@
-@import "Base/variables";
+@import "Utils/variables";
 @import "Layout/header";
 @import "Base/general";
 @import "Components/button";
 @import "Pages/accueil";
 @import "Layout/footer";
+@import "Pages/menu";
+@import "Utils/mixin";

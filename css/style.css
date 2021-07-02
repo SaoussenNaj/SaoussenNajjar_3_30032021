@@ -1,13 +1,14 @@
-header {
+.header {
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 10px;
-  height: auto;
+  height: 70px;
+  position: relative;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
-header img {
-  align-items: center;
+.header__title {
+  font-family: "Shrikhand";
 }
 
 body {
@@ -21,12 +22,27 @@ footer {
   color: white;
 }
 
-.btn {
+.btn-explorer {
   font-size: 18px;
   opacity: 1;
   background: #ff79da;
   color: white;
   padding: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-restaurant {
+  font-size: 18px;
+  opacity: 1;
+  background: #ff79da;
+  color: white;
+  padding: 15px 50px 15px 50px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -217,12 +233,83 @@ footer li {
 }
 
 .margin {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .footer__list {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.header__arrow {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
+
+.image_restaurant {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: normal;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  background-color: whitesmoke;
+  /* height: 500px;*/
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -55px;
+}
+.container__title {
+  font-family: "Shrikhand";
+  padding-top: 20px;
+  margin-left: 20px;
+}
+.container__menu {
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 15px rgba(201, 201, 201, 0.5), -2px -2px 15px rgba(201, 201, 201, 0.5);
+}
+.container__menu__titre {
+  margin-left: 10px;
+  padding-top: 20px;
+  font-size: larger;
+}
+.container__menu__description {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -23px;
+  margin-bottom: 20px;
+}
+.container__menu__description--prix {
+  font-weight: bold;
+}
+.container__button {
+  display: flex;
+  justify-content: center;
+}
+
+.titre-entree {
+  margin-left: 20px;
+  border-bottom: 1px solid #99e2d0;
+  width: 12%;
+  border-bottom-width: thick;
+}
+
+.iconDiv {
+  position: relative;
+  left: 355px;
+  bottom: 52px;
+}
+
+/*A verifier*/
 
 /*# sourceMappingURL=style.css.map */

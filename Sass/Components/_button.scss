@@ -1,9 +1,23 @@
-.btn {
+.btn-explorer {
   font-size: 18px;
   opacity: 1;
   background: #ff79da;
   color: white;
   padding: 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 20%);
+}
+.btn-restaurant {
+  font-size: 18px;
+  opacity: 1;
+  background: #ff79da;
+  color: white;
+  padding: 15px 50px 15px 50px;
   border-radius: 30px;
   border: none;
   cursor: pointer;

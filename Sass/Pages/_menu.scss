@@ -1,0 +1,68 @@
+.header__arrow {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+}
+.image_restaurant {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: normal;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.container {
+  background-color: $background-color;
+  /* height: 500px;*/
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -55px;
+
+  &__title {
+    font-family: "Shrikhand";
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+  &__menu {
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 15px rgba(201, 201, 201, 0.5),
+      -2px -2px 15px rgba(201, 201, 201, 0.5);
+  }
+
+  &__menu__titre {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: larger;
+  }
+  &__menu__description {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -23px;
+    margin-bottom: 20px;
+
+    &--prix {
+      font-weight: bold;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+.titre-entree {
+  margin-left: 20px;
+  border-bottom: 1px solid $third-color;
+  width: 12%;
+  border-bottom-width: thick;
+}
+.iconDiv {
+  position: relative;
+  left: 355px;
+  bottom: 52px;
+}
