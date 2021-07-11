@@ -71,6 +71,12 @@ input::placeholder {
     align-items: center;
     margin: 15px;
     border-radius: 15px;
+    & :hover {
+      background-color: lighten($primary-color, 35%);
+    }
+    & :hover .icon-style {
+      color: $primary-color;
+    }
   }
   &__number {
     display: flex;
@@ -95,6 +101,7 @@ input::placeholder {
     cursor: pointer;
     box-shadow: 2px 5px 5px 2px rgb(0 0 0 / 10%);
   }
+
   // @media screen and (min-width: 320px) and (max-width: 750px) {
   //   h2 {
   //     margin: 10px 5px;

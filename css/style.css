@@ -125,6 +125,12 @@ input::placeholder {
   margin: 15px;
   border-radius: 15px;
 }
+.fonctionnement__bloc :hover {
+  background-color: #f2eafb;
+}
+.fonctionnement__bloc :hover .icon-style {
+  color: #9356dc;
+}
 .fonctionnement__number {
   display: flex;
   align-items: center;
