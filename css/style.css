@@ -27,21 +27,7 @@ figure {
   margin: 0;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col {
-  flex-grow: 1;
-  width: 33%;
-}
-@media screen and (min-width: 320px) and (max-width: 1023px) {
-  .col {
-    width: 100%;
-  }
-}
-
+/*pour ajouter les 3 points dans les paragraphes*/
 .container__menu__description > p {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -389,6 +375,18 @@ footer li {
   border-radius: 30px 30px 0 0;
   position: relative;
   top: -55px;
+  /*&__menuGeneral {
+    @media screen and (min-width: 701px) and (max-width: 1100px) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+    @media screen and (min-width: 1101px) and (max-width: 1920px) {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }*/
 }
 .container__title {
   font-family: "Shrikhand";
@@ -405,19 +403,9 @@ footer li {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 701px) and (max-width: 1100px) {
-  .container__menuGeneral {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1101px) and (max-width: 1920px) {
-  .container__menuGeneral {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
+.container__wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 .container__menu {
   background-color: white;
@@ -483,10 +471,21 @@ footer li {
     bottom: 42px;
   }
 }
+
 @media screen and (min-width: 701px) and (max-width: 1100px) {
-  .iconDiv .divTitre {
+  .divTitre {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+.menuColumn {
+  flex-grow: 1;
+  width: 33%;
+}
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .menuColumn {
+    width: 100%;
   }
 }
 
