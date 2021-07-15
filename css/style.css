@@ -318,25 +318,6 @@ input::placeholder {
   font-size: 13;
 }
 
-/*
-.firstRestaurant {
-  display: flex;
-  order: 1;
-}
-.secondRestaurant {
-  display: flex;
-  order: 2;
-}
-.thirdRestaurant {
-  display: flex;
-  order: 3;
-}
-.fourRestaurant {
-  display: flex;
-  order: 4;
-}
-
-*/
 .footer__titre {
   font-family: "Shrikhand";
   margin: 20px;
@@ -375,6 +356,10 @@ footer li {
   object-fit: cover;
 }
 
+.background {
+  background-color: whitesmoke;
+}
+
 .container {
   background-color: whitesmoke;
   border-radius: 30px 30px 0 0;
@@ -385,6 +370,30 @@ footer li {
   font-family: "Shrikhand";
   padding-top: 20px;
   margin-left: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .container__title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+  .container__title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+  .container__menuGeneral {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1101px) and (max-width: 1920px) {
+  .container__menuGeneral {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 .container__menu {
   background-color: white;
@@ -398,6 +407,11 @@ footer li {
   padding-top: 20px;
   font-size: larger;
 }
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .container__menu__titre {
+    font-size: 16px;
+  }
+}
 .container__menu__description {
   display: flex;
   justify-content: space-between;
@@ -408,6 +422,11 @@ footer li {
 }
 .container__menu__description--prix {
   font-weight: bold;
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .container__menu__description {
+    font-size: 14px;
+  }
 }
 .container__button {
   display: flex;
@@ -420,11 +439,31 @@ footer li {
   width: 12%;
   border-bottom-width: thick;
 }
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+  .titre-entree {
+    border-bottom: 1px solid #99e2d0;
+    width: 12%;
+    border-bottom-width: thick;
+  }
+}
 
 .iconDiv {
   position: relative;
   left: 355px;
   bottom: 52px;
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .iconDiv {
+    position: relative;
+    left: 280px;
+    bottom: 42px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+  .iconDiv .divTitre {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*A verifier*/
