@@ -19,8 +19,6 @@ body {
 footer {
   background-color: black;
   color: white;
-  /* position: relative;*/
-  /*top: -55px;*/
 }
 
 figure {
@@ -325,7 +323,7 @@ input::placeholder {
 }
 
 .restaurant__name h3 {
-  font-size: 13;
+  font-size: 13px;
 }
 
 .footer__titre {
@@ -375,18 +373,6 @@ footer li {
   border-radius: 30px 30px 0 0;
   position: relative;
   top: -55px;
-  /*&__menuGeneral {
-    @media screen and (min-width: 701px) and (max-width: 1100px) {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-    }
-    @media screen and (min-width: 1101px) and (max-width: 1920px) {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-    }
-  }*/
 }
 .container__title {
   font-family: "Shrikhand";

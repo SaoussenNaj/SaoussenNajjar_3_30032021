@@ -1,5 +1,5 @@
 .btn-explorer {
-  font-size: 18px;
+  font-size: nth($font-size, 8);
   opacity: 1;
   background: linear-gradient(lighten($secondary-color, 10%), $primary-color);
   color: white;
@@ -11,12 +11,14 @@
   text-decoration: none;
   text-align: center;
   box-shadow: 0px 2px 3px 0px rgb(0 0 0 / 20%);
+  &:hover {
+  }
   @media screen and (min-width: 320px) and (max-width: 700px) {
-    font-size: 15px;
+    font-size: nth($font-size, 6);
   }
 }
 .btn-restaurant {
-  font-size: 18px;
+  font-size: nth($font-size, 8);
   opacity: 1;
   background: linear-gradient(lighten($secondary-color, 10%), $primary-color);
   color: white;
