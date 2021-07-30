@@ -36,8 +36,11 @@ figure {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #9356dc;
+  border-left: 16px solid #ff79da;
+  border-bottom: 16px solid #99e2d0;
   width: 120px;
   height: 120px;
+  background: url();
   animation: spin 1s linear infinite;
   visibility: hidden;
   position: absolute;
@@ -76,6 +79,15 @@ figure {
     overflow: hidden;
   }
 }
+.content {
+  color: #9356dc;
+  text-align: center;
+  padding: 100px;
+  font-size: 3rem;
+  top: 45%;
+  left: 45%;
+}
+
 .btn-explorer {
   font-size: 18px;
   opacity: 1;
@@ -369,6 +381,11 @@ input::placeholder {
 .restaurant .heartIcon {
   font-size: 24px;
   display: flex;
+  color: #9356dc;
+}
+.restaurant .heartIcon:hover {
+  color: #ff79da;
+  transition: color 1s ease-out;
 }
 
 .image {
@@ -506,61 +523,6 @@ footer li {
   overflow: hidden;
 }
 
-.left_part {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-}
-.left_part:hover {
-  animation: moveBack 0.3s linear;
-  animation-fill-mode: forwards;
-}
-.left_part:not(:hover) {
-  animation: moveForward 0.3s linear;
-  animation-fill-mode: forwards;
-}
-.left_part:hover + .container__animation {
-  animation: moveAnimationForward 0.3s linear;
-  animation-fill-mode: forwards;
-}
-.left_part:not(:hover) + .container__animation {
-  animation: moveAnimationBack 0.3s linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes moveAnimationForward {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 20%;
-  }
-}
-@keyframes moveAnimationBack {
-  from {
-    width: 20%;
-  }
-  to {
-    width: 0%;
-  }
-}
-@keyframes moveBack {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 80%;
-  }
-}
-@keyframes moveForward {
-  from {
-    width: 80%;
-  }
-  to {
-    width: 100%;
-  }
-}
 .titre-entree {
   margin-left: 20px;
   border-bottom: 1px solid #99e2d0;
@@ -588,13 +550,6 @@ footer li {
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1100px) {
-  .divTitre {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .menuColumn {
   flex-grow: 1;
   width: 33%;
@@ -603,6 +558,123 @@ footer li {
   .menuColumn {
     width: 100%;
   }
+}
+
+.btn-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dish-and-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin-top: -28px;
+  padding: 0 1rem;
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  background-color: white;
+}
+.menu_card_dish {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_card_dish_title {
+  font-weight: bold;
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .menu_card_dish_title {
+    font-size: 16px;
+  }
+}
+.menu_container_card {
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 15px rgba(201, 201, 201, 0.5), -2px -2px 15px rgba(201, 201, 201, 0.5);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: white;
+  animation: opacity 1s both;
+}
+.menu_container_card:hover .checked_box {
+  display: flex;
+  animation: slide-left 0.5s ease;
+}
+.menu_container_card:hover .menu_card_price {
+  padding-right: 70px;
+  transition: 0.5s ease;
+}
+.menu_container_card .checked_box {
+  display: none;
+  position: absolute;
+  background: #99e2d0;
+  border-radius: 0 1rem 1rem 0;
+  right: 0;
+  padding: 0 1rem;
+  height: 100%;
+}
+.menu_container_card .checked_box i {
+  font-size: 2rem;
+  color: white;
+  animation: spin2 1s both;
+}
+
+@keyframes spin2 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card_2 {
+  animation-delay: 0.5s;
+}
+
+.card_3 {
+  animation-delay: 1s;
+}
+
+.card_4 {
+  animation-delay: 1.5s;
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*A verifier*/

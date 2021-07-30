@@ -21,8 +21,11 @@ figure {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid $primary-color;
+  border-left: 16px solid $secondary-color;
+  border-bottom: 16px solid $third-color;
   width: 120px;
   height: 120px;
+  background: url();
   animation: spin 1s linear infinite;
   visibility: hidden;
   position: absolute;
@@ -60,4 +63,12 @@ figure {
     height: 0;
     overflow: hidden;
   }
+}
+.content {
+  color: $primary-color;
+  text-align: center;
+  padding: 100px;
+  font-size: 3rem;
+  top: 45%;
+  left: 45%;
 }
