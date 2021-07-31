@@ -398,10 +398,6 @@ input::placeholder {
   }
 }
 
-.restaurant__name h3 {
-  font-size: 13px;
-}
-
 /* like button */
 .fa-heart {
   position: relative;
@@ -435,6 +431,10 @@ input::placeholder {
   -webkit-text-fill-color: transparent;
   transition: opacity 400ms ease-out;
   font-weight: 600;
+}
+
+.sizeIcon {
+  font-size: 30px;
 }
 
 .footer__titre {
@@ -479,6 +479,14 @@ footer li {
   background-color: whitesmoke;
 }
 
+.container-presentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 35px;
+}
+
 .container {
   background-color: whitesmoke;
   border-radius: 30px 30px 0 0;
@@ -497,7 +505,7 @@ footer li {
 }
 @media screen and (min-width: 701px) and (max-width: 1100px) {
   .container__title {
-    font-size: 1.5rem;
+    font-size: 26px;
   }
 }
 .container__wrapper {
@@ -512,30 +520,22 @@ footer li {
 .titre-entree {
   margin-left: 20px;
   border-bottom: 1px solid #99e2d0;
-  width: 12%;
+  width: 9%;
   border-bottom-width: thick;
 }
 @media screen and (min-width: 701px) and (max-width: 1100px) {
   .titre-entree {
     border-bottom: 1px solid #99e2d0;
-    width: 12%;
+    width: 6%;
     border-bottom-width: thick;
   }
 }
-
-/*
-.iconDiv {
-  position: relative;
-  left: 355px;
-  bottom: 52px;
-  @media screen and (min-width: 320px) and (max-width: 700px) {
-    position: relative;
-    left: 280px;
-    bottom: 42px;
+@media screen and (min-width: 1024px) {
+  .titre-entree {
+    width: 12%;
   }
-
 }
-  */
+
 .menuColumn {
   flex-grow: 1;
   width: 33%;

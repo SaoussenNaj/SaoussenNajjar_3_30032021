@@ -15,6 +15,13 @@
 .background {
   background-color: $background-color;
 }
+.container-presentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 35px;
+}
 .container {
   background-color: $background-color;
   border-radius: 30px 30px 0 0;
@@ -29,7 +36,7 @@
       font-size: nth($font-size, 1);
     }
     @media screen and (min-width: 701px) and (max-width: 1100px) {
-      font-size: nth($font-size, 1);
+      font-size: 26px;
     }
   }
   &__wrapper {
@@ -40,79 +47,21 @@
     display: flex;
     justify-content: center;
   }
-  // &__menu {
-  //   display: flex;
-  //   background-color: white;
-  //   border-radius: 20px;
-  //   margin-left: 10px;
-  //   margin-right: 10px;
-  //   margin-bottom: 10px;
-  //   box-shadow: 2px 2px 15px rgba(201, 201, 201, 0.5),
-  //     -2px -2px 15px rgba(201, 201, 201, 0.5);
-  // }
-
-  // &__menu__titre {
-  //   margin-left: 10px;
-  //   padding-top: 20px;
-  //   font-size: larger;
-  //   @media screen and (min-width: 320px) and (max-width: 700px) {
-  //     font-size: nth($font-size, 7);
-  //   }
-  // }
-  // &__menu__description {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   margin-left: 10px;
-  //   margin-right: 10px;
-  //   margin-top: -23px;
-  //   margin-bottom: 20px;
-
-  // &--prix {
-  //   font-weight: bold;
-  // }
-  //   @media screen and (min-width: 320px) and (max-width: 700px) {
-  //     font-size: nth($font-size, 5);
-  //   }
-  // }
-
-  // &__animation {
-  //   width: 0%;
-  //   height: 100px;
-  //   background: $third-color;
-  //   border-radius: 0 20px 20px 0;
-  //   overflow: hidden;
-  // }
 }
 .titre-entree {
   margin-left: 20px;
   border-bottom: 1px solid $third-color;
-  width: 12%;
+  width: 9%;
   border-bottom-width: thick;
   @media screen and (min-width: 701px) and (max-width: 1100px) {
     border-bottom: 1px solid $third-color;
-    width: 12%;
+    width: 6%;
     border-bottom-width: thick;
   }
-}
-/*
-.iconDiv {
-  position: relative;
-  left: 355px;
-  bottom: 52px;
-  @media screen and (min-width: 320px) and (max-width: 700px) {
-    position: relative;
-    left: 280px;
-    bottom: 42px;
+  @media screen and (min-width:1024px){
+    width:12%;
   }
-
 }
-  */
-// .divTitre {
-//   @media screen and (min-width: 701px) and (max-width: 1100px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-// }
 .menuColumn {
   flex-grow: 1;
   width: 33%;
