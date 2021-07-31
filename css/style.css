@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: flex;
   justify-content: center;
@@ -13,6 +14,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -378,15 +380,6 @@ input::placeholder {
   justify-content: space-between;
   margin: 10px 20px;
 }
-.restaurant .heartIcon {
-  font-size: 24px;
-  display: flex;
-  color: #9356dc;
-}
-.restaurant .heartIcon:hover {
-  color: #ff79da;
-  transition: color 1s ease-out;
-}
 
 .image {
   object-fit: cover;
@@ -407,6 +400,41 @@ input::placeholder {
 
 .restaurant__name h3 {
   font-size: 13px;
+}
+
+/* like button */
+.fa-heart {
+  position: relative;
+}
+.fa-heart:hover {
+  transition: opacity 200ms ease-in-out;
+}
+.fa-heart:hover::after {
+  opacity: 0;
+}
+.fa-heart:hover::before {
+  opacity: 1;
+}
+.fa-heart::after {
+  opacity: 1;
+  font-weight: 100;
+  align-self: center;
+  transition: opacity 400ms ease-in;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+.fa-heart::before {
+  opacity: 0;
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 400ms ease-out;
+  font-weight: 600;
 }
 
 .footer__titre {
@@ -495,19 +523,19 @@ footer li {
   }
 }
 
+/*
 .iconDiv {
   position: relative;
   left: 355px;
   bottom: 52px;
-}
-@media screen and (min-width: 320px) and (max-width: 700px) {
-  .iconDiv {
+  @media screen and (min-width: 320px) and (max-width: 700px) {
     position: relative;
     left: 280px;
     bottom: 42px;
   }
-}
 
+}
+  */
 .menuColumn {
   flex-grow: 1;
   width: 33%;
