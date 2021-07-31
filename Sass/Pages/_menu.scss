@@ -13,7 +13,7 @@
   object-fit: cover;
 }
 .background {
-  background-color: whitesmoke;
+  background-color: $background-color;
 }
 .container {
   background-color: $background-color;
@@ -36,51 +36,52 @@
     display: flex;
     flex-wrap: wrap;
   }
-  &__menu {
-    display: flex;
-    background-color: white;
-    border-radius: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 15px rgba(201, 201, 201, 0.5),
-      -2px -2px 15px rgba(201, 201, 201, 0.5);
-  }
-
-  &__menu__titre {
-    margin-left: 10px;
-    padding-top: 20px;
-    font-size: larger;
-    @media screen and (min-width: 320px) and (max-width: 700px) {
-      font-size: nth($font-size, 7);
-    }
-  }
-  &__menu__description {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -23px;
-    margin-bottom: 20px;
-
-    &--prix {
-      font-weight: bold;
-    }
-    @media screen and (min-width: 320px) and (max-width: 700px) {
-      font-size: nth($font-size, 5);
-    }
-  }
-  &__button {
+    &__button {
     display: flex;
     justify-content: center;
   }
-  &__animation {
-    width: 0%;
-    height: 100px;
-    background: $third-color;
-    border-radius: 0 20px 20px 0;
-    overflow: hidden;
-  }
+  // &__menu {
+  //   display: flex;
+  //   background-color: white;
+  //   border-radius: 20px;
+  //   margin-left: 10px;
+  //   margin-right: 10px;
+  //   margin-bottom: 10px;
+  //   box-shadow: 2px 2px 15px rgba(201, 201, 201, 0.5),
+  //     -2px -2px 15px rgba(201, 201, 201, 0.5);
+  // }
+
+  // &__menu__titre {
+  //   margin-left: 10px;
+  //   padding-top: 20px;
+  //   font-size: larger;
+  //   @media screen and (min-width: 320px) and (max-width: 700px) {
+  //     font-size: nth($font-size, 7);
+  //   }
+  // }
+  // &__menu__description {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   margin-left: 10px;
+  //   margin-right: 10px;
+  //   margin-top: -23px;
+  //   margin-bottom: 20px;
+
+    // &--prix {
+    //   font-weight: bold;
+    // }
+  //   @media screen and (min-width: 320px) and (max-width: 700px) {
+  //     font-size: nth($font-size, 5);
+  //   }
+  // }
+
+  // &__animation {
+  //   width: 0%;
+  //   height: 100px;
+  //   background: $third-color;
+  //   border-radius: 0 20px 20px 0;
+  //   overflow: hidden;
+  // }
 }
 .titre-entree {
   margin-left: 20px;
@@ -127,6 +128,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+   @media screen and (min-width: 320px) and (max-width: 700px) {
+      font-size: nth($font-size, 5);
+    }
 }
 
 .menu {
@@ -146,8 +150,21 @@
           font-size: nth($font-size, 7);
         }
       }
+      &_subtitle {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -23px;
+        margin-bottom: 20px;
+      }
     }
+    &_price {
+      font-weight: bold;
+    }
+    
   }
+
   &_container {
     &_card {
       border-radius: 20px;
